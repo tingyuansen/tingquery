@@ -9,6 +9,14 @@ import os
 import openai
 import numpy as np
 
+css = r'''
+    <style>
+        [data-testid="stForm"] {border: 0px}
+    </style>
+'''
+
+st.markdown(css, unsafe_allow_html=True)
+
 # Load the precomputed data
 def load_data(doc_file, emb_file):
     with open(doc_file, 'rb') as file:
