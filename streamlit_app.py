@@ -33,7 +33,7 @@ documents, embeddings = load_data("documents.pkl", "embeddings.npy")
 chroma_collection = create_chroma_collection(documents, embeddings)
 
 # Streamlit application setup
-st.set_page_config(page_title="🌟 Have questions about my research?")
+st.set_page_config(page_title="🌟 Have questions about my research?", layout="wide")
 st.markdown("### 🌟 Have questions about my research?", unsafe_allow_html=True)
 
 # Introduction to the application
