@@ -71,10 +71,10 @@ query_input = st.text_input('Enter your question:', value=st.session_state.query
 # OpenAI API Key input
 openai_api_key = st.text_input("Enter your OpenAI API Key:", type="password")
 
-# if openai_api_key:  # Ensure the API key is used immediately after being input
-#     os.environ['OPENAI_API_KEY'] = openai_api_key
-#     openai.api_key = openai_api_key
-#     openai_client = openai.OpenAI()
+if openai_api_key:  # Ensure the API key is used immediately after being input
+    os.environ['OPENAI_API_KEY'] = openai_api_key
+    openai.api_key = openai_api_key
+    openai_client = openai.OpenAI()
 
 if st.button('Submit') and query_input:
     try:
