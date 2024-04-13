@@ -38,9 +38,9 @@ st.markdown("### 🌟 Have questions about our research?", unsafe_allow_html=Tru
 
 # Introduction to the application
 st.write("""
-In this application, we've ingested all the papers published by our research group into an AI-powered tool to perform Retrieval-Augmented Generation (RAG) and summarization. This enables you to ask questions and get insights based on our research output.
+We've ingested all the papers published by our research group into an AI-powered tool to perform Retrieval-Augmented Generation (RAG) and summarization. This enables you to ask questions and get insights based on our research output.
 
-Due to privacy and security concerns, you need to provide your own OpenAI API key to activate the AI features. Please obtain an API key from [OpenAI's website](https://openai.com/) and enter it below to get started.
+Due to security concerns, you need to provide your own OpenAI API key to activate the AI features. Please obtain an API key from [OpenAI's website](https://openai.com/) and enter it below to get started.
 """)
 
 st.markdown("")
